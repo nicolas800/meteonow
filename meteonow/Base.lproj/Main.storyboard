@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hac-yH-2Fr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="AboutViewController" customModule="meteonow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d3K-3V-7yb" userLabel="TitlePane">
+                                <rect key="frame" x="0.0" y="-6" width="414" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNf-ha-NX4" userLabel="Padder">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Meteo Now" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBZ-sU-yrT" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="57.5" width="414" height="57.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jBZ-sU-yrT" firstAttribute="leading" secondItem="d3K-3V-7yb" secondAttribute="leading" id="Hp0-0M-Lhe"/>
+                                    <constraint firstAttribute="height" constant="115" id="kSH-NW-o01"/>
+                                    <constraint firstAttribute="trailing" secondItem="jBZ-sU-yrT" secondAttribute="trailing" id="tYm-t8-Ikk"/>
+                                </constraints>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89L-vJ-pRz">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" id="DCv-NC-7pY">
+                                        <button key="customView" opaque="NO" contentMode="left" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XvH-dd-A4W" userLabel="Retour">
+                                            <rect key="frame" x="20" y="7" width="374" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="   Back" image="back">
+                                                <color key="titleColor" red="0.1176529005" green="0.28468841309999998" blue="0.84318417310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Hac-yH-2Fr" kind="showDetail" animates="NO" id="OXk-A2-vP6"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MeteoNow App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asI-Im-XT3">
+                                <rect key="frame" x="152" y="151" width="218" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App" translatesAutoresizingMaskIntoConstraints="NO" id="DY3-e9-xta">
+                                <rect key="frame" x="28" y="137" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="JMa-jl-5lk"/>
+                                    <constraint firstAttribute="height" constant="96" id="VYO-b4-tB3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-U2-Z7I">
+                                <rect key="frame" x="153" y="180" width="217" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jYi-aF-Npn">
+                                <rect key="frame" x="29" y="269" width="356" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Developed by Nicolas Witczak.  contact:  nicolas.witczak@sigma-solutions.fr  +33623142561  Documentation, term of use, privacy policy, acknowledgments and more:  https://meteonow.sigma-solutions.fr</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="89L-vJ-pRz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1MV-Yb-orn"/>
+                            <constraint firstItem="DY3-e9-xta" firstAttribute="top" secondItem="d3K-3V-7yb" secondAttribute="bottom" constant="28" id="3kN-xS-2y0"/>
+                            <constraint firstItem="89L-vJ-pRz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6C9-vL-8Rg"/>
+                            <constraint firstItem="ddO-U2-Z7I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="9AP-Th-1QW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asI-Im-XT3" secondAttribute="trailing" constant="44" id="9FD-nL-f6U"/>
+                            <constraint firstItem="jYi-aF-Npn" firstAttribute="top" secondItem="DY3-e9-xta" secondAttribute="bottom" constant="36" id="FKU-5t-yt2"/>
+                            <constraint firstItem="jYi-aF-Npn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="G4O-Wa-Ibe"/>
+                            <constraint firstItem="asI-Im-XT3" firstAttribute="top" secondItem="d3K-3V-7yb" secondAttribute="bottom" constant="42" id="IhK-DM-cIU"/>
+                            <constraint firstItem="89L-vJ-pRz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="R7s-Cv-gAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ddO-U2-Z7I" secondAttribute="trailing" constant="44" id="TA6-8p-OQh"/>
+                            <constraint firstItem="ddO-U2-Z7I" firstAttribute="top" secondItem="asI-Im-XT3" secondAttribute="bottom" constant="8.5" id="U8x-oJ-T0J"/>
+                            <constraint firstItem="d3K-3V-7yb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="UA3-KC-HKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3K-3V-7yb" secondAttribute="trailing" id="Uuh-as-NvQ"/>
+                            <constraint firstItem="DY3-e9-xta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="Vo1-0j-abu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jYi-aF-Npn" secondAttribute="trailing" constant="29" id="ajJ-TJ-pvO"/>
+                            <constraint firstItem="d3K-3V-7yb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dvb-oe-yfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jYi-aF-Npn" secondAttribute="trailing" constant="29" id="iSb-oE-UJO"/>
+                            <constraint firstItem="89L-vJ-pRz" firstAttribute="top" secondItem="jYi-aF-Npn" secondAttribute="bottom" constant="20" id="tYt-QD-CGQ"/>
+                            <constraint firstItem="asI-Im-XT3" firstAttribute="leading" secondItem="DY3-e9-xta" secondAttribute="trailing" constant="28" id="z4y-2c-y0Y"/>
+                            <constraint firstItem="jYi-aF-Npn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="zPB-sE-cGi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="NIU-dM-SYZ"/>
+                    <connections>
+                        <outlet property="ctrlDetail" destination="jYi-aF-Npn" id="xjI-61-ht7"/>
+                        <outlet property="ctrlVersion" destination="ddO-U2-Z7I" id="9Fg-ee-rOI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.9565217391305" y="18.75"/>
+        </scene>
+        <!--vertical-->
+        <scene sceneID="rOf-EK-bSu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewVertical" title="vertical" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hac-yH-2Fr" customClass="ViewController" customModule="meteonow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="top" id="lWu-lK-Jio">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MFG-cR-pmi" userLabel="TitlePane">
+                                <rect key="frame" x="0.0" y="-6" width="414" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovd-AY-Uuh" userLabel="Padder">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Meteo Now" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5e-nC-6FL" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="57.5" width="414" height="57.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="nck-HN-Do6"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-rv-oIa" userLabel="Location">
+                                <rect key="frame" x="20" y="139" width="374" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="rZP-JX-BnB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-Ek-b3t" userLabel="Meteo" customClass="MeteoViewAnim" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="229" width="414" height="494"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="P11-8r-6ww">
+                                        <rect key="frame" x="197" y="233" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="color" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRatio">
+                                        <real key="value" value="0.71999999999999997"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationSize">
+                                        <real key="value" value="1.05"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ringRatio">
+                                        <real key="value" value="2.7999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationGap">
+                                        <real key="value" value="1.05"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-sf-ZZz" userLabel="UpdateTime">
+                                <rect key="frame" x="20" y="743" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Kkh-1G-gIM"/>
+                                    <constraint firstAttribute="height" constant="50" id="WZz-op-kDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-9X-DRx">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Refresh" image="refresh" id="Lsm-j2-glC">
+                                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="onRefreshForecast:" destination="Hac-yH-2Fr" id="okR-K9-NKx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cuM-IO-dux"/>
+                                    <barButtonItem title="Settings" image="gear" id="2A9-uV-Lgx">
+                                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="onSettings:" destination="Hac-yH-2Fr" id="TXh-9J-cYU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="w6m-7g-Z56"/>
+                                    <barButtonItem image="info" id="5yR-mt-3PF">
+                                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" animates="NO" id="jzI-CG-TTN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Sga-rv-oIa" firstAttribute="leading" secondItem="hCM-cT-Xxo" secondAttribute="leading" constant="20" id="2Qo-RN-YI5"/>
+                            <constraint firstItem="Pbw-9X-DRx" firstAttribute="trailing" secondItem="hCM-cT-Xxo" secondAttribute="trailing" id="3Hg-YL-Ous"/>
+                            <constraint firstItem="Sga-rv-oIa" firstAttribute="top" secondItem="MFG-cR-pmi" secondAttribute="bottom" constant="30" id="4z4-1g-mro"/>
+                            <constraint firstItem="hCM-cT-Xxo" firstAttribute="trailing" secondItem="Sga-rv-oIa" secondAttribute="trailing" constant="20" id="DxZ-n7-Pbs"/>
+                            <constraint firstItem="Pbw-9X-DRx" firstAttribute="top" secondItem="PYJ-sf-ZZz" secondAttribute="bottom" constant="20" id="Ep5-jX-ZhK"/>
+                            <constraint firstItem="MFG-cR-pmi" firstAttribute="top" secondItem="hCM-cT-Xxo" secondAttribute="top" constant="-50" id="HEW-r2-ZXo"/>
+                            <constraint firstItem="Y0I-Ek-b3t" firstAttribute="top" secondItem="Sga-rv-oIa" secondAttribute="bottom" constant="20" id="Isd-xB-6Ws"/>
+                            <constraint firstItem="Pbw-9X-DRx" firstAttribute="bottom" secondItem="hCM-cT-Xxo" secondAttribute="bottom" id="L9H-MD-UEr"/>
+                            <constraint firstItem="PYJ-sf-ZZz" firstAttribute="leading" secondItem="hCM-cT-Xxo" secondAttribute="leading" constant="20" id="Lti-9h-LS7"/>
+                            <constraint firstItem="hCM-cT-Xxo" firstAttribute="trailing" secondItem="MFG-cR-pmi" secondAttribute="trailing" id="Vpm-Wa-Cls"/>
+                            <constraint firstItem="hCM-cT-Xxo" firstAttribute="trailing" secondItem="PYJ-sf-ZZz" secondAttribute="trailing" constant="20" id="Xcf-zX-9gw"/>
+                            <constraint firstItem="Y0I-Ek-b3t" firstAttribute="trailing" secondItem="hCM-cT-Xxo" secondAttribute="trailing" id="bDm-FH-jQp"/>
+                            <constraint firstItem="Y0I-Ek-b3t" firstAttribute="leading" secondItem="hCM-cT-Xxo" secondAttribute="leading" id="mDw-Kj-wS7"/>
+                            <constraint firstItem="Pbw-9X-DRx" firstAttribute="leading" secondItem="hCM-cT-Xxo" secondAttribute="leading" id="nxG-bL-KVV"/>
+                            <constraint firstItem="PYJ-sf-ZZz" firstAttribute="top" secondItem="Y0I-Ek-b3t" secondAttribute="bottom" constant="20" id="sQF-lx-rX5"/>
+                            <constraint firstItem="MFG-cR-pmi" firstAttribute="leading" secondItem="hCM-cT-Xxo" secondAttribute="leading" id="xjy-58-Ir7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hCM-cT-Xxo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ObP-ki-ViB"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="P11-8r-6ww" id="Wes-2J-K35"/>
+                        <outlet property="locationCtrl" destination="Sga-rv-oIa" id="c14-TV-r2I"/>
+                        <outlet property="meteoCtrl" destination="Y0I-Ek-b3t" id="e3D-SV-gmU"/>
+                        <outlet property="updateTimeCtrl" destination="PYJ-sf-ZZz" id="mLM-uu-hUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pcg-vs-z0e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+        <!--Legend-->
+        <scene sceneID="br2-a8-f6O">
+            <objects>
+                <viewController storyboardIdentifier="Legend" title="Legend" id="Hu9-iT-jho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ahu-4H-85E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rain Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioJ-nW-VcT">
+                                <rect key="frame" x="63" y="47" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-wW-Wl5" customClass="ColorPreview" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="43" y="92" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="None" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP8-As-Bwl">
+                                <rect key="frame" x="137" y="143" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9q-0L-81w" customClass="ColorPreview" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="43" y="142" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgW-WK-Qol">
+                                <rect key="frame" x="137" y="196" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2Q-WP-OJ0" customClass="ColorPreview" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="43" y="195" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.93333333333333335" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Middle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5g-T7-8CR">
+                                <rect key="frame" x="137" y="247" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-et-NDz" customClass="ColorPreview" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="43" y="246" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42745098039215684" green="0.69019607843137254" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-fL-bZS">
+                                <rect key="frame" x="137" y="301" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hen-Xj-wom" customClass="ColorPreview" customModule="meteonow" customModuleProvider="target">
+                                <rect key="frame" x="43" y="300" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.55294117647058827" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rq-ah-N4P">
+                                <rect key="frame" x="136" y="93" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ByA-pD-qS4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ijc-V8-wOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="714.50892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="App" width="60" height="60"/>
+        <image name="back" width="12" height="20"/>
+        <image name="gear" width="30" height="29.5"/>
+        <image name="info" width="30" height="30"/>
+        <image name="refresh" width="24.5" height="30"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

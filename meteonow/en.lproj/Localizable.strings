@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  meteonow
+
+  Created by Nicolas Witczak on 07/07/2019.
+  Copyright © 2019 Nicolas Witczak. All rights reserved.
+*/
+"Alerte pluie" = "Alerte pluie";
+"niveau %@ dans %@ min" = "niveau %@ dans %@ min";
+"niveau %@ maintenant" = "niveau %@ maintenant";
+"Prévisions non disponibles" = "Prévisions non disponibles";
+"Il y a plus de 30 m" = "Il y a plus de 30 m";
+"A l'instant" = "A l'instant";
+"Il y a %@ m" = "Il y a %@ m";

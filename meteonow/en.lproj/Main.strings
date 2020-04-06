@@ -1,0 +1,39 @@
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "2A9-uV-Lgx"; */
+"2A9-uV-Lgx.title" = "Settings";
+
+/* Class = "UIBarButtonItem"; title = "Refresh"; ObjectID = "Lsm-j2-glC"; */
+"Lsm-j2-glC.title" = "Refresh";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "NIU-dM-SYZ"; */
+"NIU-dM-SYZ.title" = "Title";
+
+/* Class = "UILabel"; text = " "; ObjectID = "PYJ-sf-ZZz"; */
+"PYJ-sf-ZZz.text" = " ";
+
+/* Class = "UILabel"; text = "_ _"; ObjectID = "Sga-rv-oIa"; */
+"Sga-rv-oIa.text" = "_ _";
+
+/* Class = "UIButton"; normalTitle = "   Back"; ObjectID = "XvH-dd-A4W"; */
+"XvH-dd-A4W.normalTitle" = "   Back";
+
+/* Class = "UILabel"; text = "MeteoNow App"; ObjectID = "asI-Im-XT3"; */
+"asI-Im-XT3.text" = "MeteoNow App";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "ddO-U2-Z7I"; */
+"ddO-U2-Z7I.text" = "Version";
+
+/* Class = "UILabel"; text = "     Meteo Now"; ObjectID = "jBZ-sU-yrT"; */
+"jBZ-sU-yrT.text" = "     Meteo Now";
+
+/* Class = "UILabel"; text = " "; ObjectID = "jNf-ha-NX4"; */
+"jNf-ha-NX4.text" = " ";
+
+/* Class = "UITextView"; text = "Developped by Nicolas Witczak. Test  nicolas.witczak@sigma-solutions.fr  See details at  https://meteonow.sigma-solutions.fr"; ObjectID = "jYi-aF-Npn"; */
+"jYi-aF-Npn.text" = "Developped by Nicolas Witczak. Test  nicolas.witczak@sigma-solutions.fr  See details at  https://meteonow.sigma-solutions.fr";
+
+/* Class = "UILabel"; text = "     Meteo Now"; ObjectID = "o5e-nC-6FL"; */
+"o5e-nC-6FL.text" = "     Meteo Now";
+
+/* Class = "UILabel"; text = " "; ObjectID = "ovd-AY-Uuh"; */
+"ovd-AY-Uuh.text" = " ";

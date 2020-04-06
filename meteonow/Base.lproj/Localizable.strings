@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  meteonow
+
+  Created by Nicolas Witczak on 07/07/2019.
+  Copyright © 2019 Nicolas Witczak. All rights reserved.
+*/
+"Rain alert" = "Rain alert";
+"level %@ in %@ min" = "level %@ in %@ min";
+"level %@ now" = "level %@ now";
+"Unavailable forecast" = "Unavailable forecast";
+"More than 30 m ago" = "Forecast from more than 30 m";
+"Right now" = "Forecast from right now";
+"%@ m ago" = "Forecast from %@ m";
+"low" = "low";
+"middle" = "middle";
+"strong" = "strong";
+"labeldetail" = "Developed by Nicolas Witczak.  contact:  nicolas.witczak@sigma-solutions.fr  +33623142561  Documentation, term of use, privacy policy, acknowledgments and more:  https://meteonow.sigma-solutions.fr
+";

@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  meteonow
+
+  Created by Nicolas Witczak on 07/07/2019.
+  Copyright © 2019 Nicolas Witczak. All rights reserved.
+*/
+"Rain alert" = "Alerte pluie";
+"level %@ in %@ min" = "niveau %@ dans %@ min";
+"level %@ now" = "niveau %@ maintenant";
+"Unavailable forecast" = "Prévisions non disponibles";
+"More than 30 m ago" = "Prévisions de plus de 30 m";
+"Right now" = "Prévisions à l'instant";
+"%@ m ago" = "Prévisions de %@ m";
+"low" = "faible";
+"middle" = "moyen";
+"strong" = "fort";
+
+"labeldetail" = "Développé par Nicolas Witczak.  contact:  nicolas.witczak@sigma-solutions.fr  +33623142561  Documentation, conditions d'utilisation, politique de confidentialité et autres:  https://meteonow.sigma-solutions.fr
+";
+
+"Développé par Nicolas Witczak. 
+
+contact:
+
++33623142561
+ nicolas.witczak@sigma-solutions.fr  Conditions d'utilisation, politique de confidentialité et autres:  https://meteonow.sigma-solutions.fr";
